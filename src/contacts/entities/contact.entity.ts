@@ -16,7 +16,7 @@ export class Contact {
   @Column({ name: 'linked_id', nullable: true })
   linkedId: number;
 
-  @Column({ name: 'link_precedence' })
+  @Column({ name: 'link_precedence' , nullable:true})
   linkPrecedence: string;
 
   @CreateDateColumn({ name: 'created_at' })
