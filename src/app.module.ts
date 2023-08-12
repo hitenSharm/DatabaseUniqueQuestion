@@ -17,6 +17,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       database: process.env.DB_NAME,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
+      extra: {
+        trustServerCertificate: true,
+      }
     }),    
     ContactsModule
   ],
